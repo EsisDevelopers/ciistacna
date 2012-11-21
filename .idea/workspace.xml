@@ -34,7 +34,7 @@
       <file leaf-file-name="galeria.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/inicios/galeria.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="17" selection-start="581" selection-end="581" vertical-scroll-proportion="0.39568347">
+            <state line="32" column="0" selection-start="1002" selection-end="1002" vertical-scroll-proportion="0.76258993">
               <folding />
             </state>
           </provider>
@@ -566,7 +566,11 @@
       <created>1353512125546</created>
       <updated>1353512125546</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="moises">
+      <created>1353514486794</created>
+      <updated>1353514486794</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -766,7 +770,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/inicios/galeria.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="17" selection-start="581" selection-end="581" vertical-scroll-proportion="0.39568347">
+        <state line="32" column="0" selection-start="1002" selection-end="1002" vertical-scroll-proportion="0.76258993">
           <folding />
         </state>
       </provider>
