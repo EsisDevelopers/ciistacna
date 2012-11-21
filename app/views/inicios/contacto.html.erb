@@ -1,0 +1,45 @@
+<% content_for :head_titulo do %>
+    <h1>Contacto CIIS 2012</h1>
+    <p class="lead">Escribenos todo lo deses consultar por favor.</p>
+<% end %>
+
+<section>
+  <div class="page-header">
+    <h1>Escribenos nos gustaria saber.</h1>
+  </div>
+  <p class="lead">Por favor comuniquenos cualquier duda, estaremos gustosos de responderle.</p>
+    <div class="row">
+      <div class="span8">
+      <form accept-charset="UTF-8" action="/inicios/contacto_envio" method="post" class="form-horizontal well">
+        <legend>Llene todos los datos por favor</legend>
+
+        <div class="control-group">
+          <label for="contacto_nombre" class="control-label">Nombre o Institucion</label>
+          <div class="controls">
+            <input id="contacto_nombre" name="contacto[nombre]" size="30" type="text" />
+          </div>
+        </div>
+        <div class="control-group">
+          <label for="contacto_institucion" class="control-label">Email</label>
+          <div class="controls">
+            <input id="contacto_institucion" name="contacto[institucion]" size="30" type="text" />
+          </div>
+        </div>
+        <div class="control-group">
+          <label for="contacto_mensaje" class="control-label">Mensaje</label>
+          <div class="controls">
+            <textarea class="span5" rows="8" id="contacto_mensaje" name="contacto[mensaje]" ></textarea>
+          </div>
+        </div>
+        <div class="control-group">
+          <div class="controls">
+            <button class="btn btn-primary" type="submit"><i class="icon-lock icon-white"></i> Contactar</button>
+          </div>
+        </div>
+
+      </form>
+      </div>
+    </div>
+
+</section>
+

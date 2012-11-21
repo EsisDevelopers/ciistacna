@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<div class="page-header">
+  <h1><%= @pagina.titulo %> <small><%= @pagina.subtitulo %></small></h1>
+</div>
+
+<p>
+  <%= raw(@pagina.descripcion) %>
+</p>
+
+<div class="form-actions">
+    <%= link_to 'Editar', edit_pagina_path(@pagina), :class => "btn btn-primary" %>
+    <%= link_to 'Regresar', paginas_path, :class => "btn btn-primary" %>
+</div>

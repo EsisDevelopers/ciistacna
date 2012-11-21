@@ -1,0 +1,20 @@
+<% content_for :head_titulo do %>
+    <h1>Galeria de Fotos</h1>
+    <p class="lead">Detalle de Fotos del CIIS Tacna 2012</p>
+<% end %>
+
+<section>
+  <ul class="breadcrumb">
+    <li><a href="/">Inicio</a> <span class="divider">/</span></li>
+    <li><a href="/inicios/galeria">fotos</a> <span class="divider">/</span></li>
+    <li class="active"><%= @foto.nombre %></li>
+  </ul>
+
+  <div class="page-header">
+  <h1><%= @foto.nombre %></h1>
+</div>
+  <h3>Foto:</h3>
+  <p><%= image_tag @foto.image_url(:thumb).to_s %></p>
+  <h3>Descripcion:</h3>
+  <p><%= @foto.descripcion %></p>
+</section>

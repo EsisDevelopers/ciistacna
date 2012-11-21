@@ -1,0 +1,56 @@
+<div class="span12">
+
+  <!-- Examples
+================================================== -->
+<section id="examples">
+  <div class="page-header">
+    <h1>Ponentes CIIS Tacna 2012</h1>
+  </div>
+  <p>
+
+  <%= link_to "Agregar Ponente", "/ponentes/new", :class=>"btn btn-primary" %>
+
+  </p>
+  <div class="alert alert-block">
+    <button type="button" class="close" data-dismiss="alert">×</button>
+    <h4>Recomendaciones</h4>
+    <p>Al momento de editar el resumen del ponente, procurar que todos los resumenes tengan la misma cantidad de caracteres para no
+      deformar el diseño de la pagina.</p>
+  </div>
+
+  <ul class="thumbnails bootstrap-examples">
+
+    <% @ponentes.each do |ponente|  %>
+    <li class="span3">
+      <div class="thumbnail">
+        <%= image_tag ponente.image_url.to_s %>
+        <div class="caption">
+          <h5><%= ponente.nombre[0,25] %></h5>
+          <p><%= ponente.resumen[0,50] %></p>
+          <p>
+            <% if can? :show, ponente %>
+                <%= link_to "Ver", "/ponentes/#{ponente.id}", :class => "btn" %>
+            <% end %>
+
+            <% if can? :update, ponente %>
+                <a href="/ponentes/<%= ponente.id %>/edit" class="btn">Editar</a>
+            <% end %>
+            <% if can? :destroy, ponente %>
+                <%= link_to 'Del', ponente, confirm: 'Esta Seguro que deseas eliminar ?', method: :delete, :class => "btn" %>
+            <% end %>
+
+          </p>
+        </div>
+      </div>
+    </li>
+    <% end %>
+
+  </ul>
+</section>
+
+
+
+</div>
+</div>
+
+

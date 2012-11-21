@@ -1,0 +1,12 @@
+<% content_for :head_titulo do %>
+    <h1>Inscripcion Exitosa</h1>
+    <p class="lead">Todos los Inscritos son evaluados para confirmar.</p>
+<% end %>
+<div class="marketing">
+  <h1>Ya estas inscrito..!</h1>
+  <p class="marketing-byline">Para formar parte de la lista oficial de inscritos, revisaremos si los datos son correctos y apareceras alli en cuestion de minutos.</p>
+  <p>
+    <%= link_to raw('<i class="icon-list icon-white"></i> Lista de Iscritos'),"/inicios/inscritos", :class=>"btn btn-primary btn-large" %>
+    <%= link_to raw('<i class="icon-home"></i> Inicio'),"/", :class=>"btn btn-large" %>
+  </p>
+</div>

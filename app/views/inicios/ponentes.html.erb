@@ -1,0 +1,28 @@
+<% content_for :head_titulo do %>
+    <h1>Ponentes CIIS - Tacna</h1>
+    <p class="lead">Todos ellos confirmados para el evento internacional 2012.</p>
+<% end %>
+
+<section>
+  <div class="page-header">
+    <h1>Lista de Ponentes <small>CIIS Tacna 2012</small></h1>
+  </div>
+
+    <ul class="thumbnails">
+      <% @ponentes.each do |ponente| %>
+      <li class="span3">
+        <div class="thumbnail">
+          <a href="/inicios/ponentes_detalle/<%= ponente.id %>"><%= image_tag ponente.image_url.to_s %></a>
+          <div class="caption">
+            <h5><%= ponente.nombre[0,25] %></h5>
+            <p><%= ponente.resumen[0,50] %></p>
+            <p>
+              <%= link_to raw('<i class="icon-share icon-white"></i> Detalles'), "/inicios/ponentes_detalle/#{ponente.id}", :class=>"btn btn-primary" %>
+            </p>
+          </div>
+        </div>
+      </li>
+      <% end %>
+    </ul>
+
+</section>

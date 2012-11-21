@@ -1,0 +1,38 @@
+<%= form_for @pagina, :html => {:class=>"form-horizontal"} do |f| %>
+  <% if @pagina.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@pagina.errors.count, "error") %> prohibited this pagina from being saved:</h2>
+
+      <ul>
+      <% @pagina.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="control-group">
+    <%= f.label :titulo, :class => "control-label" %>
+    <div class="controls">
+      <%= f.text_field :titulo %>
+    </div>
+
+  </div>
+  <div class="control-group">
+    <%= f.label :subtitulo, :class => "control-label" %>
+    <div class="controls">
+        <%= f.text_field :subtitulo %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :descripcion, :class => "control-label" %>
+    <div class="controls">
+        <%= f.cktext_area :descripcion, :toolbar => 'Full', :width => 800, :height => 500 %>
+    </div>
+  </div>
+  <div class="control-group">
+    <div class="controls">
+        <%= f.submit :class=>"btn" %>
+    </div>
+  </div>
+<% end %>

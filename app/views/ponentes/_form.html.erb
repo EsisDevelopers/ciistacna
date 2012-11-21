@@ -1,0 +1,49 @@
+<%= form_for @ponente, :html => {:multipart => true, :class=>"form-horizontal"} do |f| %>
+  <% if @ponente.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@ponente.errors.count, "error") %> prohibited this ponente from being saved:</h2>
+
+      <ul>
+      <% @ponente.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="control-group">
+    <%= f.label :nombre, :class=> "control-label" %>
+    <div class="controls">
+      <%= f.text_field :nombre %>
+    </div>
+
+  </div>
+
+    <div class="control-group">
+      <%= f.label :image, :class => "control-label" %>
+      <div class="controls">
+        <%= f.file_field :image %>
+      </div>
+    </div>
+
+  <div class="control-group">
+    <%= f.label :resumen, :class=>"control-label" %>
+    <div class="controls">
+      <%= f.text_area :resumen, :rows=>"8", :class =>"span5" %>
+    </div>
+  </div>
+
+    <div class="control-group">
+      <%= f.label :contenido, :class => "control-label" %>
+      <div class="controls">
+        <%= f.cktext_area :descripcion, :toolbar => 'Easy', :width => 730, :height => 300 %>
+      </div>
+    </div>
+
+  <div class="control-group">
+    <div class="controls">
+        <%= f.submit :class=> "btn" %>
+    </div>
+  </div>
+
+<% end %>

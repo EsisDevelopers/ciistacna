@@ -1,0 +1,64 @@
+<% content_for :head_titulo do %>
+    <h1>Inscritos CIIS Tacna</h1>
+    <p class="lead">Todos ellos recibiran beneficios extras que esperas.</p>
+<% end %>
+
+<section>
+  <div class="page-header">
+    <h1>Lista de Inscritos <small>CIIS Tacna 2012</small></h1>
+  </div>
+  <p class="lead">
+    El evento se llevará a cabo con la seriedad y responsabilidad debida para que sea reconocido como el evento científico más destacado del País.
+  </p>
+  <div class="alert alert-success">
+    <button type="button" class="close" data-dismiss="alert">×</button>
+    <strong>Atencion!</strong>
+    Para cambiar el estado de pendiente, acercarse a las Universidad Nacional Jorge Basadre Grohmann de Tacna a la facultad de CIENCIAS y
+    preguntar por el Bunker y pagar alli.
+  </div>
+  <div class="progress progress-striped">
+    <div class="bar progress-info" style="width: 35%;">Pendiente (pago nada)</div>
+    <div class="bar bar-warning" style="width: 35%;">Pre Inscrito (pago deuda)</div>
+    <div class="bar bar-danger" style="width: 30%;">Inscrito (pago completado)</div>
+  </div>
+
+  <table class="table table-striped table-bordered">
+    <thead>
+        <tr>
+          <th>#ID</th>
+          <th>Nombre</th>
+          <th>Departamento</th>
+          <th>Institucion</th>
+          <th>Estado</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% @inscripciones.each do |inscripcione| %>
+        <tr>
+          <td><%= inscripcione.id %></td>
+          <td><%= inscripcione.nombre[0,30] %></td>
+          <td><%= inscripcione.departamento[0,15] %></td>
+          <td><%= inscripcione.institucion[0,20] %></td>
+          <td>
+            <% if inscripcione.saldo == 0 %>
+                <div class="progress progress-info progress-striped">
+                  <div class="bar progress-info" style="width: 39%;">pendt</div>
+                </div>
+            <% end %>
+            <% if inscripcione.saldo > 0 && inscripcione.saldo < 100 %>
+                <div class="progress progress-striped">
+                  <div class="bar bar-warning" style="width: 70%;">Pre Inscrito</div>
+                </div>
+            <% end %>
+            <% if inscripcione.saldo == 100 %>
+                <div class="progress progress-striped">
+                  <div class="bar bar bar-danger" style="width: 100%;">Inscrito</div>
+                </div>
+            <% end %>
+
+          </td>
+        </tr>
+        <% end %>
+    </tbody>
+  </table>
+</section>

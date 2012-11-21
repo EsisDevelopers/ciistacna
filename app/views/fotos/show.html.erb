@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<div class="page-header">
+    <h1><%= @foto.nombre %></h1>
+</div>
+<p>
+  <%= image_tag @foto.image_url(:thumb).to_s %>
+</p>
+<h3>Descripcion</h3>
+<p><%= @foto.descripcion %></p>
+
+<div class="form-actions">
+<%= link_to 'Editar', edit_foto_path(@foto), :class => "btn btn-primary" %>
+<%= link_to 'Regresar', fotos_path, :class => "btn btn-primary" %>
+</div>

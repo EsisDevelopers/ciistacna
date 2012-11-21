@@ -1,0 +1,83 @@
+<%= form_for(@inscripcione, :html=>{:class=>"form-horizontal"}) do |f| %>
+  <% if @inscripcione.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@inscripcione.errors.count, "error") %> prohibited this inscripcione from being saved:</h2>
+
+      <ul>
+      <% @inscripcione.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+    <div class="control-group">
+    <%= f.label :nombre, :class=>"control-label" %>
+    <div class="controls">
+    <%= f.text_field :nombre %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :correo, :class=>"control-label" %>
+    <div class="controls">
+    <%= f.text_field :correo %>
+    </div>
+  </div>
+    <div class="control-group">
+        <%= f.label :institucion, :class=>"control-label" %>
+        <div class="controls">
+            <%= f.text_field :institucion %>
+        </div>
+    </div>
+    <div class="control-group">
+      <%= f.label :departamento, :class=>"control-label" %>
+      <div class="controls">
+        <%= f.select(:departamento, [
+                ['Tacna', 'tacna'],
+                ['Arequipa', 'arequipa'],
+                ['Moquegua', 'moquegua'],
+                ['Puno', 'puno'],
+                ['Ilo', 'ilo'],
+                ['Lima', 'lima'],
+                ['Argentina','argentina']
+        ]) %>
+      </div>
+    </div>
+    <div class="control-group">
+      <%= f.label :tipo, :class=>"control-label" %>
+      <div class="controls">
+        <%= f.select(:tipo, [
+                ['Estudiante 75 S/', 'estudiante'],
+                ['Profesional 90 S/', 'profesional']
+        ]) %>
+      </div>
+    </div>
+  <div class="control-group">
+    <%= f.label :saldo, :class=>"control-label" %>
+    <div class="controls">
+      <%= f.select(:saldo, [
+            ['Pago 0',         0],
+            ['Pago 5 S./',     5],
+            ['Pago 10 S./',   10],
+            ['Pago 15 S./',   15],
+            ['Pago 20 S./',   20],
+            ['Pago 25 S./',   25],
+            ['Pago 30 S./',   30],
+            ['Pago 35 S./',   35],
+            ['Pago 40 S./',   40],
+            ['Pago 45 S./',   45],
+            ['Pago 50 S./',   50],
+            ['Pago 55 S./',   55],
+            ['Pago 60 S./',   60],
+            ['Pago 65 S./',   65],
+            ['Pago 70 S./',   70],
+            ['Pago todo',    100]
+        ]) %>
+    </div>
+  </div>
+  <div class="control-group">
+    <div class="controls">
+    <%= f.submit :class=>"btn" %>
+    </div>
+  </div>
+<% end %>

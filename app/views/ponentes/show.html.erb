@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<section>
+  <div class="page-header">
+    <h1>Ponente: <%= @ponente.nombre %></h1>
+
+  </div>
+  <p>
+    <h4>Foto :</h4>
+    <%= image_tag @ponente.image_url.to_s %>
+  </p>
+  <p>
+    <h4>Resumen :</h4>
+    <%= @ponente.resumen %>
+  </p>
+  <p>
+    <h4>Contenido :</h4>
+  <%= raw(@ponente.descripcion) %>
+  </p>
+</section>
+
+<div class="form-actions">
+<%= link_to 'Editar', edit_ponente_path(@ponente), :class => "btn btn-primary" %>
+<%= link_to 'Regresar', ponentes_path, :class => "btn btn-primary" %>
+</div>

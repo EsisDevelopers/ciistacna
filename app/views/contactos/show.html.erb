@@ -1,0 +1,13 @@
+<p id="notice"><%= notice %></p>
+<div class="page-header">
+  <h1><%= @contacto.nombre %></h1>
+</div>
+
+<h3>Institucion:</h3>
+<p><%= @contacto.institucion %></p>
+<h3>Mensaje:</h3>
+<p><%= @contacto.mensaje %></p>
+
+<div class="form-actions">
+<%= link_to 'Regresar', contactos_path, :class => "btn btn-primary" %>
+</div>

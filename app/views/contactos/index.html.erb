@@ -1,0 +1,35 @@
+<div class="page-header">
+  <h1>Panel de Contactos</h1>
+</div>
+<div class="alert alert-block">
+  <button type="button" class="close" data-dismiss="alert">×</button>
+  <h4>Recomendaciones</h4>
+  <p>Se recomienda que todos los contactos relacionados con el CIIS Tacna 2012 se por este medio.</p>
+</div>
+<table class="table table-bordered table-striped">
+  <tr>
+    <th>#Id</th>
+    <th>Nombre</th>
+    <th>Institucion</th>
+    <th>Mensaje</th>
+    <th>Acciones</th>
+  </tr>
+
+<% @contactos.each do |contacto| %>
+  <tr>
+    <td><%= contacto.id %></td>
+    <td><%= contacto.nombre[0,50] %></td>
+    <td><%= contacto.institucion[0,10] %></td>
+    <td><%= contacto.mensaje[0,40] %></td>
+    <td>
+      <% if can? :show, contacto %>
+        <%= link_to 'Ver mensaje', contacto, :class => "btn" %>
+      <% end %>
+      <% if can? :destroy, contacto %>
+        <%= link_to 'Del', contacto, confirm: 'Are you sure?', method: :delete, :class => "btn" %>
+      <% end %>
+    </td>
+  </tr>
+<% end %>
+</table>
+

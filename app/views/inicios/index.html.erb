@@ -1,0 +1,129 @@
+<div class="marketing">
+  <p class="marketing-byline">
+    <%= image_tag ('https://s3.amazonaws.com/ciistacna/logo_ciistacna_2012_web.jpg') %>
+  </p>
+</div>
+<div class="marketing">
+
+  <h1><a href="/inicios/ponentes">Ponentes</a> CIIS 2012.</h1>
+  <p class="marketing-byline">El evento contara con ponentes nacionales e internacionales.</p>
+  <div class="row-fluid">
+    <ul class="thumbnails example-sites">
+      <% @ponentes.each do |ponente| %>
+      <li class="span3">
+        <a class="thumbnail" href="/inicios/ponentes">
+          <%= image_tag ponente.image_url.to_s %>
+        </a>
+        <h5><%= ponente.nombre %></h5>
+        <p><%= ponente.resumen %></p>
+      </li>
+      <% end %>
+    </ul>
+  </div>
+
+
+
+
+
+
+
+  <hr class="soften">
+  <h1 id="inscripcion">Costos & Inscripciones</h1>
+  <p class="marketing-byline">Las inscripciones online tienen descuentos y promociones, aprovecha.</p>
+  <div class="row">
+    <div class="span6">
+
+      <table class="table table-bordered">
+        <thead>
+        <tr>
+          <th>#</th>
+          <th>Tipo</th>
+          <th>Costo</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="success">
+          <td rowspan="2"><strong>Ponencias</strong></td>
+          <td>Estudiantes</td>
+          <td>75 soles</td>
+        </tr>
+        <tr class="success">
+          <td>Profesionales</td>
+          <td>90 soles</td>
+        </tr>
+        <tr class="warning">
+          <td rowspan="2"><strong>Talleres</strong></td>
+          <td>Estudiantes</td>
+          <td>15 soles</td>
+        </tr>
+        <tr class="warning">
+          <td>Profesionales</td>
+          <td>25 soles</td>
+        </tr
+        </tbody>
+      </table>
+
+    </div>
+    <div class="span6" >
+      <style type="text/css">
+          .form-signin {
+
+              padding: 19px 29px 29px;
+              margin: 0 auto 20px;
+              background-color: #fff;
+              border: 1px solid #e5e5e5;
+              -webkit-border-radius: 5px;
+              -moz-border-radius: 5px;
+              border-radius: 5px;
+              -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+              -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+              box-shadow: 0 1px 2px rgba(0,0,0,.05);
+              float: left;
+          }
+          .form-signin .form-signin-heading,
+          .form-signin .checkbox {
+              margin-bottom: 10px;
+          }
+          .form-signin input[type="text"],
+          .form-signin input[type="password"] {
+              font-size: 16px;
+              height: auto;
+              margin-bottom: 15px;
+              padding: 7px 9px;
+          }
+
+      </style>
+
+      <form class="form-signin" accept-charset="UTF-8" action="/inicios/inscripciones" method="post">
+        <h2 class="form-signin-heading">Registro Inscripcion</h2>
+        <input type="text" class="input-block-level" placeholder="Nombre Completo" name="inscripcione[nombre]">
+        <input type="text" class="input-block-level" placeholder="Correo Electronico" name="inscripcione[correo]">
+        <input type="text" class="input-block-level" placeholder="Institucion donde Estudias" name="inscripcione[institucion]">
+        <input type="hidden" name="inscripcione[saldo]" value="0">
+        <select class="input-block-level" name="inscripcione[departamento]">
+          <option>Tacna</option>
+          <option>Arequipa</option>
+          <option>Puno</option>
+          <option>Tarata</option>
+          <option>Lima</option>
+        </select>
+        <label class="checkbox">
+          <input type="checkbox" value="remember-me"> Acepto los Terminos y Condiciones del CIIS 2012
+        </label>
+        <button class="btn btn-large btn-primary" type="submit"><i class="icon-lock icon-white"></i> Inscribirme</button>
+      </form>
+
+    </div>
+  </div>
+
+
+
+
+
+  <hr class="soften">
+  <h1>Afiches del CIIS Tacna 2012</h1>
+  <p class="marketing-byline">
+    <%= image_tag ('https://s3.amazonaws.com/ciistacna/afiche_ciis_tacna_2012_unjbg.jpg') %>
+  </p>
+
+</div>

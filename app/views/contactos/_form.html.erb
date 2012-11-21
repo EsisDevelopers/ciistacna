@@ -1,0 +1,37 @@
+<%= form_for(@contacto, :html=>{:class=>"form-horizontal"}) do |f| %>
+  <% if @contacto.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@contacto.errors.count, "error") %> prohibited this contacto from being saved:</h2>
+
+      <ul>
+      <% @contacto.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="control-group">
+    <%= f.label :nombre, :class=>"control-label" %>
+    <div class="controls">
+    <%= f.text_field :nombre %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :institucion, :class=>"control-label" %>
+    <div class="controls">
+        <%= f.text_field :institucion %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :mensaje, :class=>"control-label" %>
+    <div class="controls">
+    <%= f.text_area :mensaje, :rows=>"5", :class=>"span4" %>
+    </div>
+  </div>
+  <div class="control-group">
+    <div class="controls">
+    <%= f.submit :class=>"btn" %>
+    </div>
+  </div>
+<% end %>

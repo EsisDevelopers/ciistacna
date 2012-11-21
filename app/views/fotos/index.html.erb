@@ -1,0 +1,46 @@
+<div class="page-header">
+  <h1>Galeria de fotos</h1>
+</div>
+<div class="alert alert-block">
+  <button type="button" class="close" data-dismiss="alert">×</button>
+  <h4>Recomendaciones</h4>
+  <p>Subir Todas las Fotos relacionadas con el evento, cualquier foto este es el lugar indicado.</p>
+</div>
+<% if can? :create, Foto %>
+ <p>
+  <%= link_to 'Nueva Foto', new_foto_path, :class => "btn btn-primary" %>
+ </p>
+<% end %>
+
+
+<div class="row-fluid">
+  <ul class="thumbnails">
+    <% @fotos.each do |foto| %>
+    <li class="span3">
+      <div class="thumbnail">
+        <%= image_tag foto.image_url.to_s %>
+        <div class="caption">
+          <h4><%= foto.nombre %></h4>
+          <p>
+            <% if can? :show, foto %>
+                <%= link_to 'Ver', foto, :class => "btn" %>
+            <% end %>
+            <% if can? :update, foto %>
+                <%= link_to 'Editar', edit_foto_path(foto), :class => "btn" %>
+            <% end %>
+            <% if can? :destroy, foto %>
+            <%= link_to 'Del', foto, confirm: 'Are you sure?', method: :delete, :class => "btn" %>
+            <% end %>
+          </p>
+        </div>
+      </div>
+    </li>
+    <% end %>
+  </ul>
+</div>
+
+
+
+
+
+

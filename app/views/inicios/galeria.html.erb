@@ -1,0 +1,31 @@
+<% content_for :head_titulo do %>
+    <h1>Galeria fotos</h1>
+    <p class="lead">Todas las fotos relacionadas con el CIIS Tacna 2012.</p>
+<% end %>
+
+<section>
+<div class="page-header">
+  <h1>Ultimas fotos CIIS 2012</h1>
+</div>
+<div class="alert alert-block">
+    <button type="button" class="close" data-dismiss="alert">×</button>
+    <h4>Mandanos tus Fotos</h4>
+    <p>Si eres asistente al evento o tienes cualquier relacion con el evento, mandanos tu foto por el formulario
+    de <a href="/inicios/contacto">contacto</a> y colocaremos tu foto.
+    </p>
+</div>
+
+  <div class="row-fluid">
+    <ul class="thumbnails">
+      <% @fotos.each do |foto| %>
+      <li class="span3">
+        <a href="/inicios/galeria_detalle/<%= foto.id %>" class="thumbnail">
+          <%= image_tag foto.image_url.to_s %>
+        </a>
+      </li>
+      <% end %>
+    </ul>
+  </div>
+
+
+</section>
