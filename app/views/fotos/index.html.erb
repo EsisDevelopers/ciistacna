@@ -20,7 +20,7 @@
       <div class="thumbnail">
         <%= image_tag foto.image_url(:mini).to_s %>
         <div class="caption">
-          <h4><%= foto.nombre %></h4>
+          <h5><%= foto.nombre[0,20] %></h5>
           <p>
             <% if can? :show, foto %>
                 <%= link_to 'Ver', foto, :class => "btn" %>

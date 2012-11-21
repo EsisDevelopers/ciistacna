@@ -18,11 +18,16 @@
   <div class="row-fluid">
     <ul class="thumbnails">
       <% @fotos.each do |foto| %>
-      <li class="span3">
-        <a href="/inicios/galeria_detalle/<%= foto.id %>" class="thumbnail">
-          <%= image_tag foto.image_url.to_s %>
-        </a>
-      </li>
+          <li class="span3">
+            <div class="thumbnail">
+              <a href="/inicios/galeria_detalle/<%= foto.id %>">
+              <%= image_tag foto.image_url(:mini).to_s %>
+              </a>
+              <div class="caption">
+                <h6><%= foto.nombre[0,25] %></h6>
+              </div>
+            </div>
+          </li>
       <% end %>
     </ul>
   </div>
