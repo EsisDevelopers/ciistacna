@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ce642fc0-dd95-4bdc-bb8e-be9cffb964e1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/fotos/index.html.erb" afterPath="$PROJECT_DIR$/app/views/fotos/index.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/inicios/galeria.html.erb" afterPath="$PROJECT_DIR$/app/views/inicios/galeria.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/backend.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/backend.html.erb" />
     </list>
     <ignored path="ciistacna.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,7 +34,7 @@
       <file leaf-file-name="galeria.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/inicios/galeria.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="63" selection-start="780" selection-end="780" vertical-scroll-proportion="0.54856116">
+            <state line="17" column="17" selection-start="581" selection-end="581" vertical-scroll-proportion="0.39568347">
               <folding />
             </state>
           </provider>
@@ -565,7 +562,11 @@
       <created>1353510289765</created>
       <updated>1353510289765</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="moises">
+      <created>1353512125546</created>
+      <updated>1353512125546</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -765,7 +766,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/inicios/galeria.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="63" selection-start="780" selection-end="780" vertical-scroll-proportion="0.54856116">
+        <state line="17" column="17" selection-start="581" selection-end="581" vertical-scroll-proportion="0.39568347">
           <folding />
         </state>
       </provider>
