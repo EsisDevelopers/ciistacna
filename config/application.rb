@@ -3,7 +3,6 @@ require File.expand_path('../boot', __FILE__)
 require 'rails/all'
 
 
-ActiveSupport::Deprecation.silenced = true
 
 
 if defined?(Bundler)
