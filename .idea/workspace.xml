@@ -4,7 +4,6 @@
     <list default="true" id="ce642fc0-dd95-4bdc-bb8e-be9cffb964e1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environment.rb" afterPath="$PROJECT_DIR$/config/environment.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
     </list>
     <ignored path="ciistacna.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -50,7 +49,7 @@
       <file leaf-file-name="environment.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/environment.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="31" selection-start="198" selection-end="198" vertical-scroll-proportion="0.28176796">
+            <state line="8" column="9" selection-start="206" selection-end="206" vertical-scroll-proportion="0.3756906">
               <folding />
             </state>
           </provider>
@@ -812,7 +811,11 @@
       <created>1353601913012</created>
       <updated>1353601913012</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="moises">
+      <created>1353603291297</created>
+      <updated>1353603291297</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1028,7 +1031,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/environment.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="31" selection-start="198" selection-end="198" vertical-scroll-proportion="0.28176796">
+        <state line="8" column="9" selection-start="206" selection-end="206" vertical-scroll-proportion="0.3756906">
           <folding />
         </state>
       </provider>
