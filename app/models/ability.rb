@@ -15,6 +15,7 @@ class Ability
         can [:read], [Inscripcione]
         can [:read], [Contacto]
         can [:read, :update, :create], [Foto]
+        can [:read, :update], [Auspiciadore]
       end
       if  user.has_role? :publicidad
         can [:index], [Admin]

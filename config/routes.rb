@@ -1,4 +1,6 @@
 Ciistacna::Application.routes.draw do
+  resources :auspiciadores
+
   devise_for :users
 
   get "admin/index" => "admin#index"
@@ -21,6 +23,11 @@ Ciistacna::Application.routes.draw do
   get "inicios/inscripciones_ok"=>"inicios#inscripciones_ok"
 
   get "inicios/paginas/:id" => "inicios#paginas#id"
+  get "inicios/auspiciadores" => "inicios#auspiciadores"
+  get "inicios/auspiciadore_detalle/:id" => "inicios#auspiciadore_detalle#id"
+
+
+
 
   resources :inscripciones
 

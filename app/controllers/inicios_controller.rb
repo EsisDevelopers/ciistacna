@@ -1,10 +1,11 @@
 class IniciosController < ApplicationController
 
-  layout "application", :only => [:ponentes, :informacion, :inscritos, :nosotros, :lugar, :galeria, :contacto, :inscripciones_ok, :paginas, :contacto_ok, :ponentes_detalle, :galeria_detalle]
+  layout "application", :only => [:ponentes, :informacion, :inscritos, :nosotros, :lugar, :galeria, :contacto, :inscripciones_ok, :paginas, :contacto_ok, :ponentes_detalle, :galeria_detalle, :auspiciadores, :auspiciadore_detalle]
 
   def index
     @ponentes = Ponente.limit(8)
     @fotos = Foto.order('id desc').limit(4)
+    @auspiciadores = Auspiciadore.order('id desc').limit(4)
   end
 
   def ponentes
@@ -79,5 +80,13 @@ class IniciosController < ApplicationController
 
   def paginas
     @pagina = Pagina.find(params[:id])
+  end
+
+  def auspiciadores
+    @auspiciadores = Auspiciadore.order('id desc').all
+  end
+
+  def auspiciadore_detalle
+    @auspiciadore = Auspiciadore.find(params[:id])
   end
 end

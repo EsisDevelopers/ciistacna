@@ -1,0 +1,21 @@
+<% content_for :head_titulo do %>
+    <h1>Auspiciadores CIIS 2012</h1>
+    <p class="lead">Gracias a ellos es que este evento se lleva acabo.</p>
+<% end %>
+<section>
+  <ul class="breadcrumb">
+    <li><a href="/">Inicio</a> <span class="divider">/</span></li>
+    <li><a href="/inicios/auspiciadores">Auspiciadores</a> <span class="divider">/</span></li>
+    <li class="active"><%= @auspiciadore.nombre %></li>
+  </ul>
+  <div class="page-header">
+    <h1><%= @auspiciadore.nombre %></h1>
+  </div>
+  <h4>Imagen:</h4>
+  <p><%= image_tag @auspiciadore.image_url(:thumb).to_s %></p>
+  <h4>Descripcion</h4>
+  <p><%= @auspiciadore.descripcion %></p>
+  <p class="pull-right">
+    <%= link_to raw('<i class="icon-step-backward"></i> Atraz'), "/inicios/auspiciadores", :class => "btn btn-large" %>
+  </p>
+</section>

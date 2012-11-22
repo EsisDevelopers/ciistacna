@@ -36,7 +36,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </a>
-      <a class="brand" href="/admin">Admin CIIS 2012</a>
+      <a class="brand" href="/admin">Admin</a>
       <div class="nav-collapse collapse">
         <ul class="nav">
           <% if can? :read, Ponente %>
@@ -53,6 +53,9 @@
           <% end %>
           <% if can? :read, Foto %>
             <li><a href="/fotos">Galeria de Fotos</a></li>
+          <% end %>
+          <% if can? :read, Auspiciadore %>
+            <li><a href="/auspiciadores">Auspiciadores</a></li>
           <% end %>
         </ul>
         <ul class="nav pull-right">
