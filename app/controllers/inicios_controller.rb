@@ -4,6 +4,7 @@ class IniciosController < ApplicationController
 
   def index
     @ponentes = Ponente.limit(8)
+    @fotos = Foto.order('id desc').limit(4)
   end
 
   def ponentes
