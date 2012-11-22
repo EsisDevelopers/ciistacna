@@ -1,32 +1,31 @@
 <div class="marketing">
+  <h1>Logos CIIS Tacna 2012</h1>
   <p class="marketing-byline">
-    <%= image_tag ('https://s3.amazonaws.com/ciistacna/logo_ciistacna_2012_web.jpg') %>
+    Escuela de Ingenieria Informatica y Sistemas de la UNJBG
   </p>
+  <%= image_tag ('https://s3.amazonaws.com/ciistacna/logo_ciistacna_2012_web.jpg') %>
 </div>
-<div class="marketing">
 
-  <h1><a href="/inicios/ponentes">Ponentes</a> CIIS 2012.</h1>
-  <p class="marketing-byline">El evento contara con ponentes nacionales e internacionales.</p>
-  <div class="row-fluid">
+<div class="marketing">
+  <hr class="soften">
+  <h1>Ponentes CIIS 2012.</h1>
+  <p class="marketing-byline">El evento contara con <a href="/inicios/ponentes">ponentes</a> nacionales e internacionales.</p>
     <ul class="thumbnails example-sites">
       <% @ponentes.each do |ponente| %>
-      <li class="span3">
-        <a class="thumbnail" href="/inicios/ponentes">
-          <%= image_tag ponente.image_url.to_s %>
-        </a>
-        <h5><%= ponente.nombre %></h5>
-        <p><%= ponente.resumen %></p>
-      </li>
+          <li class="span3">
+            <div class="thumbnail">
+              <%= image_tag ponente.image_url.to_s %>
+              <div class="caption">
+                <p><%= ponente.resumen[0,40] %></p>
+              </div>
+            </div>
+          </li>
       <% end %>
     </ul>
-  </div>
+</div>
 
 
-
-
-
-
-
+<div class="marketing">
   <hr class="soften">
   <h1 id="inscripcion">Costos & Inscripciones</h1>
   <p class="marketing-byline">Las inscripciones online tienen descuentos y promociones, aprovecha.</p>
@@ -115,15 +114,15 @@
 
     </div>
   </div>
+</div>
 
 
 
-
-
+<div class="marketing">
   <hr class="soften">
   <h1>Afiches del CIIS Tacna 2012</h1>
   <p class="marketing-byline">
     <%= image_tag ('https://s3.amazonaws.com/ciistacna/afiche_ciis_tacna_2012_unjbg.jpg') %>
   </p>
-
 </div>
+

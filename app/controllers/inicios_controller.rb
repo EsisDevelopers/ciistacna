@@ -3,7 +3,7 @@ class IniciosController < ApplicationController
   layout "application", :only => [:ponentes, :informacion, :inscritos, :nosotros, :lugar, :galeria, :contacto, :inscripciones_ok, :paginas, :contacto_ok, :ponentes_detalle, :galeria_detalle]
 
   def index
-    @ponentes = Ponente.limit(4)
+    @ponentes = Ponente.limit(8)
   end
 
   def ponentes
