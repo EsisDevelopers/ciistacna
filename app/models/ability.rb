@@ -22,6 +22,10 @@ class Ability
         can [:read], [Inscripcione]
         can [:read], [Contacto]
       end
+      if  user.has_role? :auspicio
+        can [:index], [Admin]
+        can [:read, :update], [Auspiciadore]
+      end
 
 
     #

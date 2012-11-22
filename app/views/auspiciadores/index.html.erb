@@ -1,7 +1,7 @@
 <h1>Lista de auspiciadores</h1>
 <hr>
 <div class="form-actions">
-<%= link_to 'New Auspiciadore', new_auspiciadore_path, :class => "btn btn-primary" %>
+<%= link_to 'Nuevo Auspiciador', new_auspiciadore_path, :class => "btn btn-primary" %>
 </div>
 
 <ul class="thumbnails bootstrap-examples">
@@ -22,7 +22,6 @@
               <% if can? :destroy, auspiciadore %>
                   <%= link_to 'Del', auspiciadore, confirm: 'Esta Seguro que deseas eliminar ?', method: :delete, :class => "btn" %>
               <% end %>
-
             </p>
           </div>
         </div>
