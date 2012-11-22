@@ -2,9 +2,9 @@ require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
 
-if Rails.env.production?
-  ActiveSupport::Deprecation.silenced = true
-end
+
+ActiveSupport::Deprecation.silenced = true
+
 
 if defined?(Bundler)
   # If you precompile assets before deploying to production, use this line
