@@ -49,7 +49,7 @@
       <file leaf-file-name="environment.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/environment.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="43" selection-start="196" selection-end="196" vertical-scroll-proportion="0.17525773">
+            <state line="3" column="42" selection-start="125" selection-end="125" vertical-scroll-proportion="0.087628864">
               <folding />
             </state>
           </provider>
@@ -794,7 +794,11 @@
       <created>1353600505766</created>
       <updated>1353600505766</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="moises">
+      <created>1353601002611</created>
+      <updated>1353601002611</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1010,7 +1014,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/environment.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="43" selection-start="196" selection-end="196" vertical-scroll-proportion="0.17525773">
+        <state line="3" column="42" selection-start="125" selection-end="125" vertical-scroll-proportion="0.087628864">
           <folding />
         </state>
       </provider>
