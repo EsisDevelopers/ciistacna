@@ -99,5 +99,5 @@ Ciistacna::Application.configure do
   config.assets.debug = true
 
   # Print deprecation notices to the Rails logger :log
-  #config.active_support.deprecation = :notify
+  config.active_support.deprecation = :silence
 end
