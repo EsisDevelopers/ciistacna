@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ce642fc0-dd95-4bdc-bb8e-be9cffb964e1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
     </list>
     <ignored path="ciistacna.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -22,10 +22,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/inicios/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="124" column="0" selection-start="4185" selection-end="4185" vertical-scroll-proportion="0.397482">
+            <state line="124" column="0" selection-start="4185" selection-end="4185" vertical-scroll-proportion="-8.5">
               <folding>
                 <element signature="tag#div#0" expanded="false" />
                 <element signature="tag#div#1" expanded="false" />
@@ -37,10 +37,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="production.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="production.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="83" column="46" selection-start="2946" selection-end="2946" vertical-scroll-proportion="0.0">
+            <state line="86" column="3" selection-start="3008" selection-end="3008" vertical-scroll-proportion="0.82474226">
               <folding />
             </state>
           </provider>
@@ -49,7 +49,7 @@
       <file leaf-file-name="environment.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/environment.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="18" selection-start="101" selection-end="101" vertical-scroll-proportion="0.0">
+            <state line="8" column="17" selection-start="198" selection-end="198" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -92,8 +92,8 @@
         <option value="$PROJECT_DIR$/app/views/inicios/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/inicios_controller.rb" />
         <option value="$PROJECT_DIR$/config/environment.rb" />
-        <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/config/environments/development.rb" />
+        <option value="$PROJECT_DIR$/config/environments/production.rb" />
       </list>
     </option>
   </component>
@@ -801,7 +801,11 @@
       <created>1353601487946</created>
       <updated>1353601487946</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="moises">
+      <created>1353601676275</created>
+      <updated>1353601676275</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -995,23 +999,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/environment.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="18" selection-start="101" selection-end="101" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="46" selection-start="2946" selection-end="2946" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/inicios/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="124" column="0" selection-start="4185" selection-end="4185" vertical-scroll-proportion="0.397482">
+        <state line="124" column="0" selection-start="4185" selection-end="4185" vertical-scroll-proportion="-8.5">
           <folding>
             <element signature="tag#div#0" expanded="false" />
             <element signature="tag#div#1" expanded="false" />
@@ -1019,6 +1009,20 @@
             <element signature="tag#div#3" expanded="false" />
             <element signature="tag#div#4" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environment.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="17" selection-start="198" selection-end="198" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="86" column="3" selection-start="3008" selection-end="3008" vertical-scroll-proportion="0.82474226">
+          <folding />
         </state>
       </provider>
     </entry>
