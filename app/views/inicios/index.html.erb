@@ -122,25 +122,7 @@
   </div>
 </div>
 
-<!-- Auspicios CIIS Tacta 2012
- ============================ -->
-<div class="marketing">
-  <hr class="soften">
-  <h1>Galeria de Auspicios</h1>
-  <p class="marketing-byline"><a href="/inicios/auspiciadores">Auspicios</a>, Gracias a estos es que el CIIS Tacna se financia.</p>
-  <ul class="thumbnails example-sites">
-    <% @auspiciadores.each do |auspiciadore| %>
-        <li class="span3">
-          <div class="thumbnail">
-            <a href="/inicios/auspiciadores/<%= auspiciadore.id %>"><%= image_tag auspiciadore.image_url(:mini).to_s %></a>
-            <div class="caption">
-              <p><%= auspiciadore.nombre[0,40] %></p>
-            </div>
-          </div>
-        </li>
-    <% end %>
-  </ul>
-</div>
+
 
 
 <!-- Galeria de Fotos CIIS Tacta 2012

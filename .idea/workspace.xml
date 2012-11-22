@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ce642fc0-dd95-4bdc-bb8e-be9cffb964e1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/inicios_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/inicios_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/inicios/index.html.erb" afterPath="$PROJECT_DIR$/app/views/inicios/index.html.erb" />
     </list>
     <ignored path="ciistacna.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,13 +26,13 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/inicios/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="129" column="127" selection-start="4455" selection-end="4455" vertical-scroll-proportion="-8.961538">
+            <state line="124" column="0" selection-start="4185" selection-end="4185" vertical-scroll-proportion="-8.5">
               <folding>
                 <element signature="tag#div#0" expanded="false" />
                 <element signature="tag#div#1" expanded="false" />
                 <element signature="tag#div#2" expanded="false" />
+                <element signature="tag#div#3" expanded="false" />
                 <element signature="tag#div#4" expanded="false" />
-                <element signature="tag#div#5" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -66,7 +68,7 @@
       <file leaf-file-name="inicios_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/inicios_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="50" selection-start="419" selection-end="419" vertical-scroll-proportion="0.20913884">
+            <state line="7" column="53" selection-start="420" selection-end="420" vertical-scroll-proportion="0.20913884">
               <folding />
             </state>
           </provider>
@@ -104,13 +106,13 @@
         <option value="$PROJECT_DIR$/app/views/ponentes/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/auspiciadores/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/auspiciadores/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/inicios/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/shared/_menu.html.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/inicios/auspiciadores.html.erb" />
         <option value="$PROJECT_DIR$/app/views/inicios/auspiciadore_detalle.html.erb" />
         <option value="$PROJECT_DIR$/app/views/inicios/ponentes_detalle.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/inicios_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/inicios/index.html.erb" />
       </list>
     </option>
   </component>
@@ -756,7 +758,11 @@
       <created>1353598775434</created>
       <updated>1353598775434</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="moises">
+      <created>1353598810723</created>
+      <updated>1353598810723</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -887,19 +893,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/inicios/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="129" column="127" selection-start="4455" selection-end="4455" vertical-scroll-proportion="-8.961538">
-          <folding>
-            <element signature="tag#div#0" expanded="false" />
-            <element signature="tag#div#1" expanded="false" />
-            <element signature="tag#div#2" expanded="false" />
-            <element signature="tag#div#4" expanded="false" />
-            <element signature="tag#div#5" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/inicios/contacto_ok.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="142" vertical-scroll-proportion="0.0">
@@ -970,9 +963,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/inicios/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="124" column="0" selection-start="4185" selection-end="4185" vertical-scroll-proportion="-8.5">
+          <folding>
+            <element signature="tag#div#0" expanded="false" />
+            <element signature="tag#div#1" expanded="false" />
+            <element signature="tag#div#2" expanded="false" />
+            <element signature="tag#div#3" expanded="false" />
+            <element signature="tag#div#4" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/inicios_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="50" selection-start="419" selection-end="419" vertical-scroll-proportion="0.20913884">
+        <state line="7" column="53" selection-start="420" selection-end="420" vertical-scroll-proportion="0.20913884">
           <folding />
         </state>
       </provider>
