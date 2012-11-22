@@ -14,7 +14,7 @@
       <% @ponentes.each do |ponente| %>
           <li class="span3">
             <div class="thumbnail">
-              <%= image_tag ponente.image_url.to_s %>
+              <a href="/inicios/ponentes_detalle/<%= ponente.id %>"><%= image_tag ponente.image_url.to_s %></a>
               <div class="caption">
                 <p><%= ponente.resumen[0,40] %></p>
               </div>
@@ -22,6 +22,7 @@
           </li>
       <% end %>
     </ul>
+
 </div>
 
 
