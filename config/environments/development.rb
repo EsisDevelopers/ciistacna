@@ -16,8 +16,8 @@ Ciistacna::Application.configure do
   # Don't care if the mailer can't send
   config.action_mailer.raise_delivery_errors = false
 
-  # Print deprecation notices to the Rails logger
-  config.active_support.deprecation = :log
+  # Print deprecation notices to the Rails logger :log
+  config.active_support.deprecation = :silenced
 
   # Only use best-standards-support built into browsers
   config.action_dispatch.best_standards_support = :builtin
