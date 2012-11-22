@@ -132,7 +132,7 @@
     <% @auspiciadores.each do |auspiciadore| %>
         <li class="span3">
           <div class="thumbnail">
-            <a href="/inicios/auspiciadores/<%= auspiciadore.id %>"><%= image_tag auspiciadore.image_url(:mini).to_s %></a>
+            <a href="/inicios/auspiciadore_detalle/<%= auspiciadore.id %>"><%= image_tag auspiciadore.image_url(:mini).to_s %></a>
             <div class="caption">
               <p><%= auspiciadore.nombre[0,40] %></p>
             </div>
