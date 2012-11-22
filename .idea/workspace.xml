@@ -43,7 +43,7 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/inicios/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="138" column="32" selection-start="4703" selection-end="4703" vertical-scroll-proportion="0.7859712">
+            <state line="133" column="34" selection-start="4464" selection-end="4464" vertical-scroll-proportion="0.63309354">
               <folding>
                 <element signature="tag#style#0;tag#div#1;tag#div#0;tag#div#2" expanded="false" />
               </folding>
@@ -591,11 +591,11 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.All tests in: migrate" />
-      <item index="1" class="java.lang.String" itemvalue="Rake.test" />
-      <item index="2" class="java.lang.String" itemvalue="Rake.spec" />
-      <item index="3" class="java.lang.String" itemvalue="Rails.Production: ciistacna" />
-      <item index="4" class="java.lang.String" itemvalue="Rails.Development: ciistacna" />
+      <item index="0" class="java.lang.String" itemvalue="Rake.test" />
+      <item index="1" class="java.lang.String" itemvalue="Rake.spec" />
+      <item index="2" class="java.lang.String" itemvalue="Rails.Production: ciistacna" />
+      <item index="3" class="java.lang.String" itemvalue="Rails.Development: ciistacna" />
+      <item index="4" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.All tests in: migrate" />
     </list>
     <recent_temporary>
       <list size="1">
@@ -656,7 +656,11 @@
       <created>1353555487255</created>
       <updated>1353555487255</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="moises">
+      <created>1353555654137</created>
+      <updated>1353555654137</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -850,7 +854,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/inicios/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="138" column="32" selection-start="4703" selection-end="4703" vertical-scroll-proportion="0.7859712">
+        <state line="133" column="34" selection-start="4464" selection-end="4464" vertical-scroll-proportion="0.63309354">
           <folding>
             <element signature="tag#style#0;tag#div#1;tag#div#0;tag#div#2" expanded="false" />
           </folding>

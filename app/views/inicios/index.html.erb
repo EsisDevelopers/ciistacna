@@ -134,7 +134,7 @@
     <% @fotos.each do |foto| %>
         <li class="span3">
           <div class="thumbnail">
-            <a href="/inicios/ponentes_detalle/<%= foto.id %>"><%= image_tag foto.image_url(:mini).to_s %></a>
+            <a href="/inicios/galeria_detalle/<%= foto.id %>"><%= image_tag foto.image_url(:mini).to_s %></a>
             <div class="caption">
               <p><%= foto.nombre[0,40] %></p>
             </div>
