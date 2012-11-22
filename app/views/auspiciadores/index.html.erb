@@ -1,0 +1,35 @@
+<h1>Lista de auspiciadores</h1>
+<hr>
+<div class="form-actions">
+<%= link_to 'New Auspiciadore', new_auspiciadore_path, :class => "btn btn-primary" %>
+</div>
+
+<ul class="thumbnails bootstrap-examples">
+  <% @auspiciadores.each do |auspiciadore|  %>
+      <li class="span3">
+        <div class="thumbnail">
+          <%= image_tag auspiciadore.image_url.to_s %>
+          <div class="caption">
+            <h5><%= auspiciadore.nombre[0,25] %></h5>
+            <p>
+              <% if can? :show, auspiciadore %>
+                  <%= link_to "Ver", "/auspiciadores/#{auspiciadore.id}", :class => "btn" %>
+              <% end %>
+
+              <% if can? :update, auspiciadore %>
+                  <a href="/auspiciadores/<%= auspiciadore.id %>/edit" class="btn">Editar</a>
+              <% end %>
+              <% if can? :destroy, auspiciadore %>
+                  <%= link_to 'Del', auspiciadore, confirm: 'Esta Seguro que deseas eliminar ?', method: :delete, :class => "btn" %>
+              <% end %>
+
+            </p>
+          </div>
+        </div>
+      </li>
+  <% end %>
+</ul>
+
+
+
+

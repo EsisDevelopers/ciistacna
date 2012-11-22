@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+
+
+<h1><%= @auspiciadore.nombre %></h1>
+<hr>
+
+<h4>Imagen:</h4>
+<p>
+<%= image_tag @auspiciadore.image_url(:thumb).to_s %>
+</p>
+<h4>Descripcion:</h4>
+<p><%= @auspiciadore.descripcion %></p>
+
+<div class="form-actions">
+<%= link_to 'Editar', edit_auspiciadore_path(@auspiciadore), :class => "btn btn-primary" %>
+<%= link_to 'Retroceder', auspiciadores_path, :class => "btn btn-primary" %>
+</div>
