@@ -22,7 +22,7 @@
       <% @ponentes.each do |ponente| %>
           <li class="span3">
             <div class="thumbnail">
-              <a href="/inicios/ponentes_detalle/<%= ponente.id %>"><%= image_tag ponente.image_url.to_s %></a>
+              <a href="/inicios/ponentes_detalle/<%= ponente.id %>"><%= image_tag ponente.image_url(:mini).to_s %></a>
               <div class="caption">
                 <h5><%= ponente.nombre[0,25] %></h5>
                 <p>
