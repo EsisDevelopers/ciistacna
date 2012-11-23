@@ -15,7 +15,7 @@
           <a href="/inicios/ponentes_detalle/<%= ponente.id %>"><%= image_tag ponente.image_url.to_s %></a>
           <div class="caption">
             <h5><%= ponente.nombre[0,25] %></h5>
-            <p><%= ponente.resumen[0,43] %></p>
+            <p><%= ponente.resumen[0,25] %></p>
             <p>
               <%= link_to raw('<i class="icon-share icon-white"></i> Detalles'), "/inicios/ponentes_detalle/#{ponente.id}", :class=>"btn btn-primary" %>
                 <div class="fb-like" data-href="http://ciistacna.com/inicios/ponentes_detalle/<%= ponente.id %>" data-send="false" data-layout="button_count" data-show-faces="false"></div>
