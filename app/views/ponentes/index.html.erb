@@ -25,7 +25,7 @@
         <%= image_tag ponente.image_url(:mini).to_s %>
         <div class="caption">
           <h5><%= ponente.nombre[0,25] %></h5>
-          <p><%= ponente.resumen[0,50] %></p>
+          <p><%= ponente.resumen[0,25] %></p>
           <p>
             <% if can? :show, ponente %>
                 <%= link_to "Ver", "/ponentes/#{ponente.id}", :class => "btn" %>

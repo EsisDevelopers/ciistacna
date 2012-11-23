@@ -9,7 +9,7 @@ class IniciosController < ApplicationController
   end
 
   def ponentes
-    @ponentes = Ponente.all
+    @ponentes = Ponente.order('id desc').all
   end
 
   def ponentes_detalle
