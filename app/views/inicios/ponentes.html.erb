@@ -18,11 +18,16 @@
             <p><%= ponente.resumen[0,43] %></p>
             <p>
               <%= link_to raw('<i class="icon-share icon-white"></i> Detalles'), "/inicios/ponentes_detalle/#{ponente.id}", :class=>"btn btn-primary" %>
+                <div class="fb-like" data-href="http://ciistacna.com/inicios/ponentes_detalle/<%= ponente.id %>" data-send="false" data-layout="button_count" data-show-faces="false"></div>
             </p>
           </div>
         </div>
       </li>
       <% end %>
     </ul>
+  <p>
+  <div class="fb-like" data-href="http://ciistacna.com/inicios/ponentes" data-send="false" data-width="700" data-show-faces="true"></div>
+  <div class="fb-comments" data-href="http://ciistacna.com/inicios/ponentes" data-num-posts="5" data-width="700"></div>
+  </p>
 
 </section>

@@ -25,12 +25,16 @@
               </a>
               <div class="caption">
                 <h6><%= foto.nombre[0,25] %></h6>
+                <div class="fb-like" data-href="http://ciistacna.com/inicios/galeria_detalle/<%= foto.id %>" data-send="false" data-layout="button_count" data-show-faces="false"></div>
               </div>
             </div>
           </li>
       <% end %>
     </ul>
 
-
+  <p>
+  <div class="fb-like" data-href="http://ciistacna.com/inicios/galeria" data-send="false" data-width="700" data-show-faces="true"></div>
+  <div class="fb-comments" data-href="http://ciistacna.com/inicios/galeria" data-num-posts="5" data-width="700"></div>
+  </p>
 
 </section>

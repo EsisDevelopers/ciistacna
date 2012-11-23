@@ -15,10 +15,15 @@
               <h6><%= auspiciadore.nombre[0,25] %></h6>
               <p>
                 <%= link_to raw('<i class="icon-share"></i> Mas Info'), "/inicios/auspiciadore_detalle/#{auspiciadore.id}", :class=>"btn" %>
+              <div class="fb-like" data-href="http://ciistacna.com/inicios/auspiciadore_detalle/<%= auspiciadore.id %>" data-send="false" data-layout="button_count"  data-show-faces="false"></div>
               </p>
             </div>
           </div>
         </li>
     <% end %>
   </ul>
+  <p>
+  <div class="fb-like" data-href="http://ciistacna.com/inicios/auspiciadores" data-send="false" data-width="700" data-show-faces="true"></div>
+  <div class="fb-comments" data-href="http://ciistacna.com/inicios/auspiciadores" data-num-posts="5" data-width="700"></div>
+  </p>
 </section>
