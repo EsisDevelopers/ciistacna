@@ -1,3 +1,12 @@
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/es_ES/all.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 <!-- Logos CIIS Tacna 2012
  ============================ -->
 <div class="marketing">
@@ -21,7 +30,10 @@
             <div class="thumbnail">
               <a href="/inicios/ponentes_detalle/<%= ponente.id %>"><%= image_tag ponente.image_url.to_s %></a>
               <div class="caption">
-                <p><%= ponente.resumen[0,40] %></p>
+                <p>
+                  <%= ponente.resumen[0,40] %>
+                <div class="fb-like" data-href="http://ciistacna.com/inicios/ponente_detalle/<%= ponente.id %>" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
+                </p>
               </div>
             </div>
           </li>
@@ -180,15 +192,10 @@
   <p class="marketing-byline">
     Facebook social
   </p>
+  <p><iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fciistacna.com%2F&amp;send=false&amp;layout=standard&amp;width=700&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font=arial&amp;height=80" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:700px; height:80px;" allowTransparency="true"></iframe></p>
   <p>
-  <div id="fb-root"></div>
-  <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/es_ES/all.js#xfbml=1";
-      fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));</script>
+
+  <div class="fb-comments" data-href="http://ciistacna.com" data-num-posts="2" data-width="700"></div>
   </p>
 </div>
 
