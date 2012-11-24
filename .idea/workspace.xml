@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce642fc0-dd95-4bdc-bb8e-be9cffb964e1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/inicios/auspiciadore_detalle.html.erb" afterPath="$PROJECT_DIR$/app/views/inicios/auspiciadore_detalle.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/inicios/auspiciadores.html.erb" afterPath="$PROJECT_DIR$/app/views/inicios/auspiciadores.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/inicios/contacto.html.erb" afterPath="$PROJECT_DIR$/app/views/inicios/contacto.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/inicios/galeria.html.erb" afterPath="$PROJECT_DIR$/app/views/inicios/galeria.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/inicios/galeria_detalle.html.erb" afterPath="$PROJECT_DIR$/app/views/inicios/galeria_detalle.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/inicios/index.html.erb" afterPath="$PROJECT_DIR$/app/views/inicios/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/inicios/inscritos.html.erb" afterPath="$PROJECT_DIR$/app/views/inicios/inscritos.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/inicios/paginas.html.erb" afterPath="$PROJECT_DIR$/app/views/inicios/paginas.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/inicios/ponentes.html.erb" afterPath="$PROJECT_DIR$/app/views/inicios/ponentes.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/inicios/ponentes_detalle.html.erb" afterPath="$PROJECT_DIR$/app/views/inicios/ponentes_detalle.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/inicios.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/inicios.html.erb" />
     </list>
     <ignored path="ciistacna.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,91 +21,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/inicios/index.html.erb">
+      <file leaf-file-name="inicios.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/inicios.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="200" column="200" selection-start="7145" selection-end="7341" vertical-scroll-proportion="-14.346154">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ponentes.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/inicios/ponentes.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="0" selection-start="1087" selection-end="1087" vertical-scroll-proportion="-14.692307">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ponentes_detalle.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/inicios/ponentes_detalle.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="6" selection-start="663" selection-end="663" vertical-scroll-proportion="-15.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="paginas.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/inicios/paginas.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="21" selection-start="273" selection-end="273" vertical-scroll-proportion="-8.5">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="inscritos.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/inicios/inscritos.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="6" selection-start="2436" selection-end="2436" vertical-scroll-proportion="-16.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="galeria.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/inicios/galeria.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="4" selection-start="1200" selection-end="1200" vertical-scroll-proportion="-13.923077">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="galeria_detalle.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/inicios/galeria_detalle.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="4" selection-start="905" selection-end="905" vertical-scroll-proportion="-15.692307">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="auspiciadores.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/inicios/auspiciadores.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="6" selection-start="1067" selection-end="1067" vertical-scroll-proportion="-14.230769">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="auspiciadore_detalle.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/inicios/auspiciadore_detalle.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="4" selection-start="1153" selection-end="1153" vertical-scroll-proportion="-16.346153">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="contacto.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/inicios/contacto.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="4" selection-start="1936" selection-end="1936" vertical-scroll-proportion="0.7418738">
+            <state line="10" column="55" selection-start="441" selection-end="441" vertical-scroll-proportion="0.3130755">
               <folding />
             </state>
           </provider>
@@ -139,7 +49,6 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
         <option value="$PROJECT_DIR$/app/controllers/inicios_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/ponentes/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/inicios.html.erb" />
         <option value="$PROJECT_DIR$/app/views/inicios/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/inicios/ponentes.html.erb" />
         <option value="$PROJECT_DIR$/app/views/inicios/ponentes_detalle.html.erb" />
@@ -150,6 +59,7 @@
         <option value="$PROJECT_DIR$/app/views/inicios/auspiciadores.html.erb" />
         <option value="$PROJECT_DIR$/app/views/inicios/auspiciadore_detalle.html.erb" />
         <option value="$PROJECT_DIR$/app/views/inicios/contacto.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/inicios.html.erb" />
       </list>
     </option>
   </component>
@@ -927,79 +837,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/inicios.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="6" selection-start="1720" selection-end="1720" vertical-scroll-proportion="0.58379376">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/inicios/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="200" column="200" selection-start="7145" selection-end="7341" vertical-scroll-proportion="-14.346154">
+        <state line="200" column="200" selection-start="7145" selection-end="7341" vertical-scroll-proportion="0.7131931">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/inicios/ponentes.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="0" selection-start="1087" selection-end="1087" vertical-scroll-proportion="-14.692307">
+        <state line="27" column="0" selection-start="1087" selection-end="1087" vertical-scroll-proportion="0.7304015">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/inicios/ponentes_detalle.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="6" selection-start="663" selection-end="663" vertical-scroll-proportion="-15.0">
+        <state line="25" column="6" selection-start="663" selection-end="663" vertical-scroll-proportion="0.7456979">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/inicios/paginas.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="21" selection-start="273" selection-end="273" vertical-scroll-proportion="-8.5">
+        <state line="13" column="21" selection-start="273" selection-end="273" vertical-scroll-proportion="0.42256215">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/inicios/inscritos.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="6" selection-start="2436" selection-end="2436" vertical-scroll-proportion="-16.0">
+        <state line="64" column="6" selection-start="2436" selection-end="2436" vertical-scroll-proportion="0.7954111">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/inicios/galeria.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="4" selection-start="1200" selection-end="1200" vertical-scroll-proportion="-13.923077">
+        <state line="34" column="4" selection-start="1200" selection-end="1200" vertical-scroll-proportion="0.6666667">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/inicios/galeria_detalle.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="4" selection-start="905" selection-end="905" vertical-scroll-proportion="-15.692307">
+        <state line="24" column="4" selection-start="905" selection-end="905" vertical-scroll-proportion="0.7513812">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/inicios/auspiciadores.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="6" selection-start="1067" selection-end="1067" vertical-scroll-proportion="-14.230769">
+        <state line="25" column="6" selection-start="1067" selection-end="1067" vertical-scroll-proportion="0.68139964">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/inicios/auspiciadore_detalle.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="4" selection-start="1153" selection-end="1153" vertical-scroll-proportion="-16.346153">
+        <state line="25" column="4" selection-start="1153" selection-end="1153" vertical-scroll-proportion="0.78268874">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/inicios/contacto.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="4" selection-start="1936" selection-end="1936" vertical-scroll-proportion="0.7418738">
+        <state line="36" column="23" selection-start="1595" selection-end="1595" vertical-scroll-proportion="0.37016574">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/inicios.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="55" selection-start="441" selection-end="441" vertical-scroll-proportion="0.3130755">
           <folding />
         </state>
       </provider>
