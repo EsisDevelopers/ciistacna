@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce642fc0-dd95-4bdc-bb8e-be9cffb964e1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/inicios/index.html.erb" afterPath="$PROJECT_DIR$/app/views/inicios/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/inicios.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/inicios.html.erb" />
     </list>
     <ignored path="ciistacna.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,7 +24,7 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/inicios/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="184" column="21" selection-start="6596" selection-end="6596" vertical-scroll-proportion="0.29834256">
+            <state line="200" column="18" selection-start="7207" selection-end="7207" vertical-scroll-proportion="0.7495396">
               <folding />
             </state>
           </provider>
@@ -897,7 +895,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/inicios/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="184" column="21" selection-start="6596" selection-end="6596" vertical-scroll-proportion="0.29834256">
+        <state line="200" column="18" selection-start="7207" selection-end="7207" vertical-scroll-proportion="0.7495396">
           <folding />
         </state>
       </provider>
