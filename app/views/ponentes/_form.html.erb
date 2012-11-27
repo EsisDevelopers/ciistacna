@@ -16,13 +16,24 @@
     <div class="controls">
       <%= f.text_field :nombre %>
     </div>
-
   </div>
 
     <div class="control-group">
       <%= f.label :image, :class => "control-label" %>
       <div class="controls">
         <%= f.file_field :image %>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <%= f.label :Ponente, :class=> "control-label" %>
+      <div class="controls">
+        <%= f.select(:tipo, [
+                ['Selecciona', ''],
+                ['Internacional', 'internacional'],
+                ['Nacional', 'nacional'],
+                ['Taller', 'taller']
+        ]) %>
       </div>
     </div>
 

@@ -18,32 +18,121 @@
       deformar el diseño de la pagina.</p>
   </div>
 
+  <h3>Ponentes</h3>
   <ul class="thumbnails bootstrap-examples">
     <% @ponentes.each do |ponente|  %>
-    <li class="span3">
-      <div class="thumbnail">
-        <%= image_tag ponente.image_url(:mini).to_s %>
-        <div class="caption">
-          <h5><%= ponente.nombre[0,25] %></h5>
-          <p><%= ponente.resumen[0,25] %></p>
-          <p>
-            <% if can? :show, ponente %>
-                <%= link_to "Ver", "/ponentes/#{ponente.id}", :class => "btn" %>
-            <% end %>
+        <li class="span3">
+          <div class="thumbnail">
+            <%= image_tag ponente.image_url(:mini).to_s %>
+            <div class="caption">
+              <h5><%= ponente.nombre[0,25] %></h5>
+              <p><%= ponente.resumen[0,25] %></p>
+              <p>
+                <% if can? :show, ponente %>
+                    <%= link_to "Ver", "/ponentes/#{ponente.id}", :class => "btn" %>
+                <% end %>
 
-            <% if can? :update, ponente %>
-                <a href="/ponentes/<%= ponente.id %>/edit" class="btn">Editar</a>
-            <% end %>
-            <% if can? :destroy, ponente %>
-                <%= link_to 'Del', ponente, confirm: 'Esta Seguro que deseas eliminar ?', method: :delete, :class => "btn" %>
-            <% end %>
-
-          </p>
-        </div>
-      </div>
-    </li>
+                <% if can? :update, ponente %>
+                    <a href="/ponentes/<%= ponente.id %>/edit" class="btn">Editar</a>
+                <% end %>
+                <% if can? :destroy, ponente %>
+                    <%= link_to 'Del', ponente, confirm: 'Esta Seguro que deseas eliminar ?', method: :delete, :class => "btn" %>
+                <% end %>
+              </p>
+            </div>
+          </div>
+        </li>
     <% end %>
   </ul>
+
+
+
+
+  <h3>Ponentes Internacionales</h3>
+  <ul class="thumbnails bootstrap-examples">
+    <% @ponentes_internacionales.each do |ponentes_internacionale|  %>
+        <li class="span3">
+          <div class="thumbnail">
+            <%= image_tag ponentes_internacionale.image_url(:mini).to_s %>
+            <div class="caption">
+              <h5><%= ponentes_internacionale.nombre[0,25] %></h5>
+              <p><%= ponentes_internacionale.resumen[0,25] %></p>
+              <p>
+                <% if can? :show, ponentes_internacionale %>
+                    <%= link_to "Ver", "/ponentes/#{ponentes_internacionale.id}", :class => "btn" %>
+                <% end %>
+
+                <% if can? :update, ponentes_internacionale %>
+                    <a href="/ponentes/<%= ponentes_internacionale.id %>/edit" class="btn">Editar</a>
+                <% end %>
+                <% if can? :destroy, ponentes_internacionale %>
+                    <%= link_to 'Del', ponentes_internacionale, confirm: 'Esta Seguro que deseas eliminar ?', method: :delete, :class => "btn" %>
+                <% end %>
+              </p>
+            </div>
+          </div>
+        </li>
+    <% end %>
+  </ul>
+
+  <h3>Ponentes Nacionales</h3>
+  <ul class="thumbnails bootstrap-examples">
+    <% @ponentes_nacionales.each do |ponentes_nacionale|  %>
+        <li class="span3">
+          <div class="thumbnail">
+            <%= image_tag ponentes_nacionale.image_url(:mini).to_s %>
+            <div class="caption">
+              <h5><%= ponentes_nacionale.nombre[0,25] %></h5>
+              <p><%= ponentes_nacionale.resumen[0,25] %></p>
+              <p>
+                <% if can? :show, ponentes_nacionale %>
+                    <%= link_to "Ver", "/ponentes/#{ponentes_nacionale.id}", :class => "btn" %>
+                <% end %>
+
+                <% if can? :update, ponentes_nacionale %>
+                    <a href="/ponentes/<%= ponentes_nacionale.id %>/edit" class="btn">Editar</a>
+                <% end %>
+                <% if can? :destroy, ponentes_nacionale %>
+                    <%= link_to 'Del', ponentes_nacionale, confirm: 'Esta Seguro que deseas eliminar ?', method: :delete, :class => "btn" %>
+                <% end %>
+              </p>
+            </div>
+          </div>
+        </li>
+    <% end %>
+  </ul>
+
+  <h3>Ponentes Talleres</h3>
+  <ul class="thumbnails bootstrap-examples">
+    <% @ponentes_tallers.each do |ponentes_taller|  %>
+        <li class="span3">
+          <div class="thumbnail">
+            <%= image_tag ponentes_taller.image_url(:mini).to_s %>
+            <div class="caption">
+              <h5><%= ponentes_taller.nombre[0,25] %></h5>
+              <p><%= ponentes_taller.resumen[0,25] %></p>
+              <p>
+                <% if can? :show, ponentes_taller %>
+                    <%= link_to "Ver", "/ponentes/#{ponentes_taller.id}", :class => "btn" %>
+                <% end %>
+
+                <% if can? :update, ponentes_taller %>
+                    <a href="/ponentes/<%= ponentes_taller.id %>/edit" class="btn">Editar</a>
+                <% end %>
+                <% if can? :destroy, ponentes_taller %>
+                    <%= link_to 'Del', ponentes_taller, confirm: 'Esta Seguro que deseas eliminar ?', method: :delete, :class => "btn" %>
+                <% end %>
+              </p>
+            </div>
+          </div>
+        </li>
+    <% end %>
+  </ul>
+
+
+
+
+
 </section>
 
 

@@ -5,6 +5,9 @@ class PonentesController < ApplicationController
   layout "backend"
   def index
     @ponentes = Ponente.order('id desc').all
+    @ponentes_internacionales  = Ponente.where("tipo LIKE ?" , "internacional").order('id desc').all
+    @ponentes_nacionales  = Ponente.where("tipo LIKE ?" , "nacional").order('id desc').all
+    @ponentes_tallers     = Ponente.where("tipo LIKE ?" , "taller").order('id desc').all
 
     respond_to do |format|
       format.html # index.html.erb
