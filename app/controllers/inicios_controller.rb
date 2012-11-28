@@ -6,6 +6,8 @@ class IniciosController < ApplicationController
     @ponentes = Ponente.order('tipo asc').limit(8)
     @fotos = Foto.order('id desc').limit(4)
     @auspiciadores = Auspiciadore.order('id desc')
+    @cronograma  = Foto.where("tipo LIKE ?" , "cronograma").limit(1)
+    @logos  = Foto.where("tipo LIKE ?" , "logo").limit(2)
   end
 
   def ponentes

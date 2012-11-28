@@ -1,18 +1,20 @@
 <!-- Cronograma CIIS Tacna 2012
  ============================ -->
+<% if @cronograma.count != 0 %>
 <div class="marketing" xmlns="http://www.w3.org/1999/html">
   <h1>Cronograma Tentativo CIIS Tacna</h1>
   <p class="marketing-byline">
     Escuela de Ingenieria Informatica y Sistemas de la UNJBG
   </p>
-  <%= image_tag ('https://ciistacna.s3.amazonaws.com/uploads/foto/image/16/thumb_thumb_cronograma_ciis_tacna_v9.JPG') %>
+  <%= image_tag @cronograma[0].image_url(:thumb).to_s %>
 </div>
+    <hr class="soften">
+<% end %>
 
 
 <!-- Ponentes CIIS Tacna 2012
  ============================ -->
 <div class="marketing">
-  <hr class="soften">
   <h1>Ponentes CIIS 2012.</h1>
   <p class="marketing-byline">
     El evento contara con <a href="/inicios/ponentes">ponentes</a> nacionales e internacionales.
@@ -177,19 +179,19 @@
 </div>
 
 
-<!-- Afiches CIIS Tacna 2012
+<!-- Logos CIIS Tacna 2012
  ============================ -->
+<% if @logos.count != 0 %>
 <div class="marketing">
   <hr class="soften">
   <h1>Logos y Afiches del CIIS Tacna 2012</h1>
-  <p class="marketing-byline">
-    <%= image_tag ('https://s3.amazonaws.com/ciistacna/afiche_ciis_tacna_2012_unjbg.jpg') %>
-  </p>
-  <p>
-    <%= image_tag ('https://s3.amazonaws.com/ciistacna/logo_ciistacna_2012_web.jpg') %>
-  </p>
-
+  <% @logos.each do |logo| %>
+      <p>
+      <%= image_tag logo.image_url(:thumb).to_s %>
+      </p>
+  <% end %>
 </div>
+<% end %>
 
 
 <!-- Red Social CIIS Tacna 2012
