@@ -4,7 +4,7 @@ class PonentesController < ApplicationController
   load_and_authorize_resource
   layout "backend"
   def index
-    @ponentes = Ponente.order('tipo asc').all
+    @ponentes = Ponente.where("tipo LIKE ?" , "").order('id desc').all
     @ponentes_internacionales  = Ponente.where("tipo LIKE ?" , "1").order('id desc').all
     @ponentes_nacionales  = Ponente.where("tipo LIKE ?" , "2").order('id desc').all
     @ponentes_tallers     = Ponente.where("tipo LIKE ?" , "3").order('id desc').all

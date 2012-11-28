@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce642fc0-dd95-4bdc-bb8e-be9cffb964e1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/ponentes_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/ponentes_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/ponentes/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/ponentes/_form.html.erb" />
     </list>
     <ignored path="ciistacna.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,7 +24,7 @@
       <file leaf-file-name="ponentes_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/ponentes_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="41" selection-start="192" selection-end="192" vertical-scroll-proportion="0.17525773">
+            <state line="6" column="71" selection-start="221" selection-end="221" vertical-scroll-proportion="0.17525773">
               <folding />
             </state>
           </provider>
@@ -874,7 +872,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/ponentes_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="41" selection-start="192" selection-end="192" vertical-scroll-proportion="0.17525773">
+        <state line="6" column="71" selection-start="221" selection-end="221" vertical-scroll-proportion="0.17525773">
           <folding />
         </state>
       </provider>
