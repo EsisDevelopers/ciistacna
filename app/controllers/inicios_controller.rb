@@ -3,13 +3,16 @@ class IniciosController < ApplicationController
   layout "application", :only => [:ponentes, :informacion, :inscritos, :nosotros, :lugar, :galeria, :contacto, :inscripciones_ok, :paginas, :contacto_ok, :ponentes_detalle, :galeria_detalle, :auspiciadores, :auspiciadore_detalle]
 
   def index
-    @ponentes = Ponente.order('id desc').limit(8)
+    @ponentes = Ponente.order('tipo asc').limit(8)
     @fotos = Foto.order('id desc').limit(4)
     @auspiciadores = Auspiciadore.order('id desc')
   end
 
   def ponentes
     @ponentes = Ponente.order('id desc').all
+    @ponentes_internacionales  = Ponente.where("tipo LIKE ?" , "1").order('id desc').all
+    @ponentes_nacionales  = Ponente.where("tipo LIKE ?" , "2").order('id desc').all
+    @ponentes_tallers     = Ponente.where("tipo LIKE ?" , "3").order('id desc').all
   end
 
   def ponentes_detalle

@@ -18,35 +18,6 @@
       deformar el diseño de la pagina.</p>
   </div>
 
-  <h3>Ponentes</h3>
-  <ul class="thumbnails bootstrap-examples">
-    <% @ponentes.each do |ponente|  %>
-        <li class="span3">
-          <div class="thumbnail">
-            <%= image_tag ponente.image_url(:mini).to_s %>
-            <div class="caption">
-              <h5><%= ponente.nombre[0,25] %></h5>
-              <p><%= ponente.resumen[0,25] %></p>
-              <p>
-                <% if can? :show, ponente %>
-                    <%= link_to "Ver", "/ponentes/#{ponente.id}", :class => "btn" %>
-                <% end %>
-
-                <% if can? :update, ponente %>
-                    <a href="/ponentes/<%= ponente.id %>/edit" class="btn">Editar</a>
-                <% end %>
-                <% if can? :destroy, ponente %>
-                    <%= link_to 'Del', ponente, confirm: 'Esta Seguro que deseas eliminar ?', method: :delete, :class => "btn" %>
-                <% end %>
-              </p>
-            </div>
-          </div>
-        </li>
-    <% end %>
-  </ul>
-
-
-
 
   <h3>Ponentes Internacionales</h3>
   <ul class="thumbnails bootstrap-examples">
@@ -102,7 +73,7 @@
     <% end %>
   </ul>
 
-  <h3>Ponentes Talleres</h3>
+  <h3>Ponentes para Talleres</h3>
   <ul class="thumbnails bootstrap-examples">
     <% @ponentes_tallers.each do |ponentes_taller|  %>
         <li class="span3">

@@ -4,27 +4,69 @@
 <% end %>
 
 <section>
-  <div class="page-header">
-    <h1>Lista de Ponentes <small>CIIS Tacna 2012</small></h1>
-  </div>
-
+    <div class="page-header">
+        <h1>Ponentes <small>Internacionales</small></h1>
+    </div>
     <ul class="thumbnails">
-      <% @ponentes.each do |ponente| %>
+      <% @ponentes_internacionales.each do |ponentes_internacionale| %>
       <li class="span3">
         <div class="thumbnail">
-          <a href="/inicios/ponentes_detalle/<%= ponente.id %>"><%= image_tag ponente.image_url(:mini).to_s %></a>
+          <a href="/inicios/ponentes_detalle/<%= ponentes_internacionale.id %>"><%= image_tag ponentes_internacionale.image_url(:mini).to_s %></a>
           <div class="caption">
-            <h5><%= ponente.nombre[0,25] %></h5>
-            <p><%= ponente.resumen[0,25] %></p>
+            <h5><%= ponentes_internacionale.nombre[0,25] %></h5>
+            <p><%= ponentes_internacionale.resumen[0,25] %></p>
             <p>
-              <%= link_to raw('<i class="icon-share icon-white"></i> Detalles'), "/inicios/ponentes_detalle/#{ponente.id}", :class=>"btn btn-primary" %>
-                <div class="fb-like" data-href="http://ciistacna.com/inicios/ponentes_detalle/<%= ponente.id %>" data-send="false" data-layout="button_count" data-show-faces="false"></div>
+              <%= link_to raw('<i class="icon-share icon-white"></i> Detalles'), "/inicios/ponentes_detalle/#{ponentes_internacionale.id}", :class=>"btn btn-primary" %>
+                <div class="fb-like" data-href="http://ciistacna.com/inicios/ponentes_detalle/<%= ponentes_internacionale.id %>" data-send="false" data-layout="button_count" data-show-faces="false"></div>
             </p>
           </div>
         </div>
       </li>
       <% end %>
     </ul>
+
+  <div class="page-header">
+    <h1>Ponentes <small>Nacionales</small></h1>
+  </div>
+  <ul class="thumbnails">
+    <% @ponentes_nacionales.each do |ponentes_nacionale| %>
+        <li class="span3">
+          <div class="thumbnail">
+            <a href="/inicios/ponentes_detalle/<%= ponentes_nacionale.id %>"><%= image_tag ponentes_nacionale.image_url(:mini).to_s %></a>
+            <div class="caption">
+              <h5><%= ponentes_nacionale.nombre[0,25] %></h5>
+              <p><%= ponentes_nacionale.resumen[0,25] %></p>
+              <p>
+                <%= link_to raw('<i class="icon-share icon-white"></i> Detalles'), "/inicios/ponentes_detalle/#{ponentes_nacionale.id}", :class=>"btn btn-primary" %>
+              <div class="fb-like" data-href="http://ciistacna.com/inicios/ponentes_detalle/<%= ponentes_nacionale.id %>" data-send="false" data-layout="button_count" data-show-faces="false"></div>
+              </p>
+            </div>
+          </div>
+        </li>
+    <% end %>
+  </ul>
+
+  <div class="page-header">
+    <h1>Talleres <small>CIIS Tacna</small></h1>
+  </div>
+  <ul class="thumbnails">
+    <% @ponentes_tallers.each do |ponentes_taller| %>
+        <li class="span3">
+          <div class="thumbnail">
+            <a href="/inicios/ponentes_detalle/<%= ponentes_taller.id %>"><%= image_tag ponentes_taller.image_url(:mini).to_s %></a>
+            <div class="caption">
+              <h5><%= ponentes_taller.nombre[0,25] %></h5>
+              <p><%= ponentes_taller.resumen[0,25] %></p>
+              <p>
+                <%= link_to raw('<i class="icon-share icon-white"></i> Detalles'), "/inicios/ponentes_detalle/#{ponentes_taller.id}", :class=>"btn btn-primary" %>
+              <div class="fb-like" data-href="http://ciistacna.com/inicios/ponentes_detalle/<%= ponentes_taller.id %>" data-send="false" data-layout="button_count" data-show-faces="false"></div>
+              </p>
+            </div>
+          </div>
+        </li>
+    <% end %>
+  </ul>
+
   <br>
   <br>
   <p>
