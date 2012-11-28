@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce642fc0-dd95-4bdc-bb8e-be9cffb964e1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/inicios_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/inicios_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/ponentes_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/ponentes_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/inicios/ponentes.html.erb" afterPath="$PROJECT_DIR$/app/views/inicios/ponentes.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/ponentes/index.html.erb" afterPath="$PROJECT_DIR$/app/views/ponentes/index.html.erb" />
     </list>
@@ -33,28 +31,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="inicios_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="inicios_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/inicios_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="39" selection-start="331" selection-end="331" vertical-scroll-proportion="0.14938489">
+            <state line="5" column="39" selection-start="331" selection-end="331" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ponentes.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/inicios/ponentes.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="111" selection-start="3018" selection-end="3018" vertical-scroll-proportion="-15.653846">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/ponentes/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="20" selection-start="2929" selection-end="2929" vertical-scroll-proportion="-13.692307">
+            <state line="76" column="33" selection-start="2943" selection-end="2943" vertical-scroll-proportion="0.15285452">
               <folding />
             </state>
           </provider>
@@ -95,10 +84,10 @@
         <option value="$PROJECT_DIR$/app/views/inicios/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/ponentes/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/ponentes/_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/ponentes/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/ponentes_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/inicios/ponentes.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/inicios_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/inicios/ponentes.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/ponentes/index.html.erb" />
       </list>
     </option>
   </component>
@@ -905,20 +894,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/ponentes/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="20" selection-start="2929" selection-end="2929" vertical-scroll-proportion="-13.692307">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/inicios/ponentes.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="111" selection-start="3018" selection-end="3018" vertical-scroll-proportion="-15.653846">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/ponentes_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="53" selection-start="204" selection-end="204" vertical-scroll-proportion="0.0">
@@ -926,9 +901,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/inicios/ponentes.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="0" selection-start="2216" selection-end="2216" vertical-scroll-proportion="0.24861878">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/inicios_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="39" selection-start="331" selection-end="331" vertical-scroll-proportion="0.14938489">
+        <state line="5" column="39" selection-start="331" selection-end="331" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/ponentes/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="76" column="33" selection-start="2943" selection-end="2943" vertical-scroll-proportion="0.15285452">
           <folding />
         </state>
       </provider>

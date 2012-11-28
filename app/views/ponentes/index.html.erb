@@ -73,6 +73,8 @@
     <% end %>
   </ul>
 
+
+  <% if @ponentes_tallers.nil? %>
   <h3>Ponentes para Talleres</h3>
   <ul class="thumbnails bootstrap-examples">
     <% @ponentes_tallers.each do |ponentes_taller|  %>
@@ -99,7 +101,7 @@
         </li>
     <% end %>
   </ul>
-
+  <% end %>
 
 
 
